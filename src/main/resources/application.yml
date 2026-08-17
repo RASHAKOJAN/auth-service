@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_db
+    username: auth_user
+    password: auth_pass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+app:
+  jwt:
+    secret: "kJ8mN2pQ7rT9vW3xY6zA1bC4dF5gH0jK2mN8pQ4rT7vW9xY3zA6bC1dF5gH8jK0m"
+    expiration-ms: 86400000
